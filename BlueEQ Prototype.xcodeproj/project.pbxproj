@@ -99,9 +99,11 @@
 		6A86947A220404D000702ED6 /* BlueEQ Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				6AC440D9220E678F00D9D0EC /* Controller */,
+				6AC440D8220E678900D9D0EC /* Model */,
+				6AC440D7220E677100D9D0EC /* View */,
 				6A86947B220404D000702ED6 /* AppDelegate.swift */,
 				6A86947D220404D000702ED6 /* ViewController.swift */,
-				6A86947F220404D000702ED6 /* Main.storyboard */,
 				6A869485220404D200702ED6 /* Assets.xcassets */,
 				6A869487220404D200702ED6 /* LaunchScreen.storyboard */,
 				6A86948A220404D200702ED6 /* Info.plist */,
@@ -126,6 +128,28 @@
 				6A8694A0220404D200702ED6 /* Info.plist */,
 			);
 			path = "BlueEQ PrototypeUITests";
+			sourceTree = "<group>";
+		};
+		6AC440D7220E677100D9D0EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A86947F220404D000702ED6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6AC440D8220E678900D9D0EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6AC440D9220E678F00D9D0EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
