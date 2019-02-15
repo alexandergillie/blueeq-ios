@@ -21,6 +21,7 @@
 		6AC440DF220E7D5300D9D0EC /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC440DE220E7D5300D9D0EC /* Shared.swift */; };
 		6AC440E1220E7E9800D9D0EC /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC440E0220E7E9800D9D0EC /* Dimension.swift */; };
 		6AC440E3220E805500D9D0EC /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC440E2220E805500D9D0EC /* Resource.swift */; };
+		E5D1479F30C8D869CBAA8B0C /* Pods_BlueEQ_Prototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81278A28732566A4BD63706E /* Pods_BlueEQ_Prototype.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		590A7F639A16AE5D2BDDB623 /* Pods-BlueEQ Prototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueEQ Prototype.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlueEQ Prototype/Pods-BlueEQ Prototype.release.xcconfig"; sourceTree = "<group>"; };
 		6A869478220404D000702ED6 /* BlueEQ Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlueEQ Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A86947B220404D000702ED6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A86947D220404D000702ED6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,8 @@
 		6AC440DE220E7D5300D9D0EC /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		6AC440E0220E7E9800D9D0EC /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
 		6AC440E2220E805500D9D0EC /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		81278A28732566A4BD63706E /* Pods_BlueEQ_Prototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueEQ_Prototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE3A1EDFF002DF7A593F38E /* Pods-BlueEQ Prototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueEQ Prototype.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlueEQ Prototype/Pods-BlueEQ Prototype.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D1479F30C8D869CBAA8B0C /* Pods_BlueEQ_Prototype.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0805433C7E854D026D8317CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81278A28732566A4BD63706E /* Pods_BlueEQ_Prototype.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6A86946F220404D000702ED6 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +108,8 @@
 				6A869492220404D200702ED6 /* BlueEQ PrototypeTests */,
 				6A86949D220404D200702ED6 /* BlueEQ PrototypeUITests */,
 				6A869479220404D000702ED6 /* Products */,
+				DC20F00FDD90A6C67B39D8FF /* Pods */,
+				0805433C7E854D026D8317CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +185,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DC20F00FDD90A6C67B39D8FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACE3A1EDFF002DF7A593F38E /* Pods-BlueEQ Prototype.debug.xcconfig */,
+				590A7F639A16AE5D2BDDB623 /* Pods-BlueEQ Prototype.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A8694A3220404D200702ED6 /* Build configuration list for PBXNativeTarget "BlueEQ Prototype" */;
 			buildPhases = (
+				BDD0AF658E6811B5583D53DB /* [CP] Check Pods Manifest.lock */,
 				6A869474220404D000702ED6 /* Sources */,
 				6A869475220404D000702ED6 /* Frameworks */,
 				6A869476220404D000702ED6 /* Resources */,
+				292159C5F7A9978F5FEA7B97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,6 +321,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		292159C5F7A9978F5FEA7B97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BlueEQ Prototype/Pods-BlueEQ Prototype-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlueEQ Prototype/Pods-BlueEQ Prototype-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDD0AF658E6811B5583D53DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueEQ Prototype-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A869474220404D000702ED6 /* Sources */ = {
@@ -482,6 +555,7 @@
 		};
 		6A8694A4220404D200702ED6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE3A1EDFF002DF7A593F38E /* Pods-BlueEQ Prototype.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -500,6 +574,7 @@
 		};
 		6A8694A5220404D200702ED6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 590A7F639A16AE5D2BDDB623 /* Pods-BlueEQ Prototype.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
