@@ -17,7 +17,7 @@ class Resource {
         
         print("Initializing resource")
         viewStatus = false;
-        content = "Some dagum good content"
+        content = "Early to bed and early to rise makes a man healthy, wealthy, and woke."
         resourceDate = Date()
     }
 }

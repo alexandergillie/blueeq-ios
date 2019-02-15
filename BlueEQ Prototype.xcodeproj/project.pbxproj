@@ -15,6 +15,7 @@
 		6A869489220404D200702ED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A869487220404D200702ED6 /* LaunchScreen.storyboard */; };
 		6A869494220404D200702ED6 /* BlueEQ_PrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A869493220404D200702ED6 /* BlueEQ_PrototypeTests.swift */; };
 		6A86949F220404D200702ED6 /* BlueEQ_PrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A86949E220404D200702ED6 /* BlueEQ_PrototypeUITests.swift */; };
+		6A964466221636F100132B32 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A964465221636F100132B32 /* TipViewController.swift */; };
 		6AC440DB220E778B00D9D0EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC440DA220E778B00D9D0EC /* User.swift */; };
 		6AC440DD220E7ACD00D9D0EC /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC440DC220E7ACD00D9D0EC /* Assessment.swift */; };
 		6AC440DF220E7D5300D9D0EC /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC440DE220E7D5300D9D0EC /* Shared.swift */; };
@@ -54,6 +55,7 @@
 		6A86949A220404D200702ED6 /* BlueEQ PrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BlueEQ PrototypeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A86949E220404D200702ED6 /* BlueEQ_PrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueEQ_PrototypeUITests.swift; sourceTree = "<group>"; };
 		6A8694A0220404D200702ED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A964465221636F100132B32 /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		6AC440DA220E778B00D9D0EC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6AC440DC220E7ACD00D9D0EC /* Assessment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
 		6AC440DE220E7D5300D9D0EC /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			children = (
 				6A86947D220404D000702ED6 /* ViewController.swift */,
 				6A86947B220404D000702ED6 /* AppDelegate.swift */,
+				6A964465221636F100132B32 /* TipViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				6A86947E220404D000702ED6 /* ViewController.swift in Sources */,
 				6AC440E1220E7E9800D9D0EC /* Dimension.swift in Sources */,
 				6A86947C220404D000702ED6 /* AppDelegate.swift in Sources */,
+				6A964466221636F100132B32 /* TipViewController.swift in Sources */,
 				6AC440DD220E7ACD00D9D0EC /* Assessment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,12 +9,12 @@
 import Foundation
 
 class Dimension {
-    private let name: String;
+    private let dimensionName: String;
     private let score: Int;
     
     init(){
         print("Initialized dimension")
-        name = "A great name!"
+        dimensionName = "Self-Regard"
         score = 100
     }
 }
