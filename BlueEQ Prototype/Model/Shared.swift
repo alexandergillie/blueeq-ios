@@ -134,4 +134,14 @@ class Shared {
             "Tell the truth about yourself without exaggeration."
         ]
     }
+    
+    // MARK: Getters
+    
+    func getTips(withLabel: String) -> [String] {
+        return tipsAndTechniques[withLabel]!
+    }
+    
+    func getSelectedDimensions() -> [String] {
+        return selectedDimensions
+    }
 }
