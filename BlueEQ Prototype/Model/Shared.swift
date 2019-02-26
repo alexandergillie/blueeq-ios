@@ -14,12 +14,16 @@ class Shared {
     
     var tipsAndTechniques: [String: [String]] = [:]
     var selectedDimensions = [String]()
-    var allDimensions = [String]()
+    var allDimensions: [String: [String]] = [:]
+    var parentDimensions = [String]()
+    var assessmentScores = [String: Int]()
     
     init() {
         initTipsAndTechniques()
         initSelectedDimensions()
         initAllDimensions()
+        initParentDimensions()
+        initScores()
     }
     
     private func initSelectedDimensions() {
@@ -30,32 +34,50 @@ class Shared {
         ]
     }
     
+    private func initParentDimensions() {
+        parentDimensions = [
+            "Self-Regard",
+            "Self-Awareness",
+            "Self-Control",
+            "Social Perception",
+            "Social Effectiveness"
+        ]
+    }
     
     private func initAllDimensions() {
-        allDimensions = [
+        allDimensions["Self-Regard"] = [
             "Self-Regard",
             "Optimism",
             "Self-Respect",
+            "Self-Confidence",
             "Motivation",
             "Independence",
+        ]
+        allDimensions["Self-Awareness"] = [
             "Self-Awareness",
             "Openness",
             "Self-Knowledge",
             "Integrity",
             "Monitoring",
             "Introspection",
+        ]
+        allDimensions["Self-Control"] = [
             "Self-Control",
             "Impulse Control",
             "Stress Tolerance",
             "Emotional Stability",
             "Resilience",
             "Delayed Gratification",
-            "Social Percpetion",
+        ]
+        allDimensions["Social Perception"] = [
+            "Social Perception",
             "Empathy",
             "Observation",
             "Anticipation",
             "Interpretation",
             "Mindfulness",
+        ]
+        allDimensions["Social Effectiveness"] = [
             "Social Effectiveness",
             "Influence",
             "Conflict Management",
@@ -135,6 +157,46 @@ class Shared {
         ]
     }
     
+    // TODO: Replace with info from assessment
+    
+    private func initScores() {
+        assessmentScores["Self-Regard"] = 44
+        assessmentScores["Optimism"] = 45
+        assessmentScores["Self-Respect"] = 46
+        assessmentScores["Self-Confidence"] = 47
+        assessmentScores["Motivation"] = 48
+        assessmentScores["Independence"] = 50
+        
+        assessmentScores["Self-Awareness"] = 58
+        assessmentScores["Openness"] = 59
+        assessmentScores["Self-Knowledge"] = 60
+        assessmentScores["Integrity"] = 61
+        assessmentScores["Monitoring"] = 63
+        assessmentScores["Introspection"] = 64
+
+        assessmentScores["Self-Control"] = 79
+        assessmentScores["Impulse Control"] = 80
+        assessmentScores["Stress Tolerance"] = 81
+        assessmentScores["Emotional Stability"] = 81
+        assessmentScores["Resilience"] = 82
+        assessmentScores["Delayed Gratification"] = 83
+        
+        assessmentScores["Social Perception"] = 69
+        assessmentScores["Empathy"] = 70
+        assessmentScores["Observation"] = 71
+        assessmentScores["Anticipation"] = 72
+        assessmentScores["Interpretation"] = 73
+        assessmentScores["Mindfulness"] = 74
+        
+        assessmentScores["Social Effectiveness"] = 87
+        assessmentScores["Influence"] = 88
+        assessmentScores["Conflict Management"] = 89
+        assessmentScores["Relationship Management"] = 90
+        assessmentScores["Accountability"] = 91
+        assessmentScores["Ego Management"] = 92
+    }
+ 
+    
     // MARK: Getters
     
     func getTips(withLabel: String) -> [String] {
@@ -143,5 +205,17 @@ class Shared {
     
     func getSelectedDimensions() -> [String] {
         return selectedDimensions
+    }
+    
+    func getParentDimensions() -> [String] {
+        return Array(allDimensions.keys)
+    }
+    
+    func getChildDimensions(ofParent: String) -> [String] {
+        return allDimensions[ofParent]!
+    }
+    
+    func getScore(ofDimension: String) -> Int {
+        return assessmentScores[ofDimension]!
     }
 }
