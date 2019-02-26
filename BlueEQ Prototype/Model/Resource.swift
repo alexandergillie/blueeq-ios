@@ -9,15 +9,18 @@
 import Foundation
 
 class Resource {
-    private let resourceDate: Date;
-    private let content: String;
-    private var viewStatus: Bool;
+    let resourceDate: Date;
+    let content: String;
+    var viewStatus: Bool;
+    let dimension: String;
     
-    init(){
+    init(resourceDate: Date, content: String, dimension: String){
         
         print("Initializing resource")
         viewStatus = false;
-        content = "Early to bed and early to rise makes a man healthy, wealthy, and woke."
-        resourceDate = Date()
+        self.content = content
+        self.resourceDate = resourceDate
+        self.dimension = dimension
     }
+    
 }

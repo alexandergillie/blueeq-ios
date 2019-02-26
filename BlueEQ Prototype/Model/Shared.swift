@@ -17,6 +17,7 @@ class Shared {
     var allDimensions: [String: [String]] = [:]
     var parentDimensions = [String]()
     var assessmentScores = [String: Int]()
+    var resources = [String: [Resource]]()
     
     init() {
         initTipsAndTechniques()
@@ -24,6 +25,7 @@ class Shared {
         initAllDimensions()
         initParentDimensions()
         initScores()
+        initResources()
     }
     
     private func initSelectedDimensions() {
@@ -196,6 +198,25 @@ class Shared {
         assessmentScores["Ego Management"] = 92
     }
  
+    // MARK: Resource Data
+    
+    func initResources() {
+        resources["Self-Regard"] = [
+            Resource(resourceDate: Date(), content: "Treat yoself", dimension: "Self-Regard"),
+            Resource(resourceDate: Date(), content: "Eat slugs malfoy", dimension: "Self-Regard"),
+        ]
+        
+        resources["Optimism"] = [
+            Resource(resourceDate: Date(), content: "I'm sure you'll get married", dimension: "Optimism"),
+            Resource(resourceDate: Date(), content: "Get a degree and you'll get a job", dimension: "Self-Regard"),
+        ]
+        
+        resources["Self-Respect"] = [
+            Resource(resourceDate: Date(), content: "You're beautiful.", dimension: "Self-Respect"),
+            Resource(resourceDate: Date(), content: "Your muscles are nice.", dimension: "Self-Respect")
+        ]
+    }
+    
     
     // MARK: Getters
     
@@ -217,5 +238,14 @@ class Shared {
     
     func getScore(ofDimension: String) -> Int {
         return assessmentScores[ofDimension]!
+    }
+    
+    func getSelectedResources() -> [String : [Resource]] {
+        var resourcesToReturn = [String: [Resource]]()
+        for dimension in selectedDimensions {
+            resourcesToReturn[dimension] = resources[dimension]
+        }
+        
+        return resourcesToReturn
     }
 }
