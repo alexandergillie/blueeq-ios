@@ -18,6 +18,7 @@ class Shared {
     var parentDimensions = [String]()
     var assessmentScores = [String: Int]()
     var resources = [String: [Resource]]()
+    var currentUser = User()
     
     init() {
         initTipsAndTechniques()
@@ -26,6 +27,7 @@ class Shared {
         initParentDimensions()
         initScores()
         initResources()
+        var userFetch = UserFetch()
     }
     
     private func initSelectedDimensions() {
@@ -217,6 +219,12 @@ class Shared {
         ]
     }
     
+    // MARK: User Data
+    
+    func initUser(user: User) {
+        currentUser = user
+    }
+    
     
     // MARK: Getters
     
@@ -247,5 +255,9 @@ class Shared {
         }
         
         return resourcesToReturn
+    }
+    
+    func getCurrentUser() -> User {
+        return currentUser
     }
 }
