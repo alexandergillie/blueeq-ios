@@ -12,4 +12,5 @@ class ResourceCell: UITableViewCell {
     
     
     @IBOutlet weak var resourceData: UITextView!
+    
 }

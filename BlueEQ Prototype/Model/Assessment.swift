@@ -9,7 +9,10 @@
 import Foundation
 
 class Assessment {
-    init() {
+    
+    let assessmentID: String
+    init(assessmentID: String) {
         print("Initialized assessment")
+        self.assessmentID = assessmentID
     }
 }
